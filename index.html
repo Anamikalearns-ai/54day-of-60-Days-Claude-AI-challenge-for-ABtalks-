@@ -70,4 +70,50 @@
       <article class="service-card">
         <p class="service-index">GA4</p>
         <h3>Analytics &amp; attribution</h3>
-        <p>Conversion tracking set up correctly from day one, so every rupee of spe
+        <p>Conversion tracking set up correctly from day one, so every rupee of spe<section class="ai-demo" id="ai-demo">
+  <div class="wrap">
+    <p class="section-eyebrow">Try it yourself</p>
+    <h2 class="section-title">Free AI marketing audit</h2>
+    <p class="section-lede">Tell me about your business and get a sample campaign audit — the same thinking that goes into every NexaGrowth strategy.</p>
+
+    <form class="audit-form" id="auditForm">
+      <div class="form-row">
+        <label for="bizType">Business type</label>
+        <input type="text" id="bizType" name="bizType" placeholder="e.g. dental clinic, restaurant, clothing boutique" required>
+      </div>
+      <div class="form-row">
+        <label for="bizCity">City</label>
+        <input type="text" id="bizCity" name="bizCity" placeholder="e.g. Kanpur" required>
+      </div>
+      <div class="form-row">
+        <label for="bizBudget">Monthly ad budget (₹)</label>
+        <input type="number" id="bizBudget" name="bizBudget" placeholder="e.g. 15000" min="1000" required>
+      </div>
+      <div class="form-row">
+        <label for="bizGoal">Main goal</label>
+        <select id="bizGoal" name="bizGoal" required>
+          <option value="" disabled selected>Choose a goal</option>
+          <option value="more leads and enquiries">More leads / enquiries</option>
+          <option value="more online sales">More online sales</option>
+          <option value="more footfall and walk-ins">More footfall / walk-ins</option>
+          <option value="brand awareness">Brand awareness</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" id="auditSubmit">Generate my audit</button>
+    </form>
+
+    <div class="audit-loading" id="auditLoading" hidden>
+      <div class="spinner"></div>
+      <p>Building your audit&hellip;</p>
+    </div>
+
+    <div class="audit-error" id="auditError" hidden>
+      <p id="auditErrorText"></p>
+      <button type="button" class="btn btn-ghost" id="auditRetry">Try again</button>
+    </div>
+
+    <div class="audit-result" id="auditResult" hidden></div>
+
+    <p class="audit-disclaimer">Powered by the Claude API, called directly from your browser for this demo — outputs are illustrative sample strategy, not a guarantee.</p>
+  </div>
+        </section>
